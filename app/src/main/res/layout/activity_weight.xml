@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sub_page_color">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/constraint_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:outlineAmbientShadowColor="@color/shadow_color"
+                android:outlineSpotShadowColor="@color/shadow_color"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/header_title">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/input_card"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_12sdp">
+
+                        <TextView
+                            android:id="@+id/text_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latobold"
+                            android:gravity="center"
+                            android:text="@string/input_value"
+                            android:textColor="@color/text_label"
+                            android:textSize="18sp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latosemibold"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:text="@string/metric"
+                            android:textColor="@color/text_label"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/milligram"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="mg"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/centigram"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="cg"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/gram"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="g"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/kilogram"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="kg"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="12dp">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/metricton"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="t"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latosemibold"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:text="@string/imperial"
+                            android:textColor="@color/text_label"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/ounce"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="oz"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/pound"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="lgs"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/stone"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:hint="st"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/sortton"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/longton"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_weight10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/latomedium"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:text="@string/clear"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_input" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

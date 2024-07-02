@@ -1,0 +1,305 @@
+<resources>
+    <string name="app_name">Advance Calculator</string>
+    <string name="algebra">Algebra</string>
+    <string name="geometry">Geometry</string>
+    <string name="unit_converters">Unit Converters</string>
+    <string name="finance">Finance</string>
+    <string name="health">Health</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="percentage">Percentage</string>
+    <string name="value">value</string>
+    <string name="mileage">Mileage</string>
+    <string name="area">Area</string>
+    <string name="ohm">Ohm\'s Law</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="right_triangle">Right Triangle</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="tax_amount">Tax amount</string>
+    <string name="final_price">Final Price</string>
+    <string name="final_bill">Final Bill</string>
+    <string name="volume">Volume</string>
+    <string name="gravity">gravity</string>
+    <string name="sale_tax">Sales Tax</string>
+    <string name="Gal">GAI</string>
+    <string name="heron">Heron\'s Formula</string>
+    <string name="perimeter">Perimeter</string>
+    <string name="tip">Tip</string>
+    <string name="milligram">milligram</string>
+    <string name="time">Time</string>
+    <string name="loan">Loan</string>
+    <string name="rate">Rate</string>
+    <string name="period">Period</string>
+    <string name="hour">Hours</string>
+    <string name="minute">Minutes</string>
+    <string name="decade">Decade</string>
+    <string name="century">Century</string>
+    <string name="week">week</string>
+    <string name="millennium">Millennium</string>
+    <string name="second">second</string>
+    <string name="millisecond">millisecond</string>
+    <string name="month_emi">Monthly EMI Pay</string>
+    <string name="total_pay">Total Pay</string>
+    <string name="interest">Interest</string>
+    <string name="body_mass">Body Mass Index</string>
+    <string name="body_fat">Body Fat</string>
+    <string name="daily_burn">Daily Caloric Burn</string>
+    <string name="body_fat_percentage">Body Fat Percentage</string>
+    <string name="height_a">Height A</string>
+    <string name="height_b">Height B</string>
+    <string name="height_c">Height C</string>
+    <string name="discount">Discount</string>
+    <string name="increase">Increase</string>
+    <string name="quantity">Quantity</string>
+    <string name="weight_kg">Weight in KG</string>
+    <string name="weight">Weight</string>
+    <string name="centigram">centigram</string>
+    <string name="gram">gram</string>
+    <string name="metricton">metricton</string>
+    <string name="ounce">ounce</string>
+    <string name="pound">pound</string>
+    <string name="stone">stone</string>
+    <string name="sortton">sortton</string>
+    <string name="kilogram">kilogram</string>
+    <string name="weight_ibs">Weight in ibs</string>
+    <string name="tax">Tax</string>
+    <string name="longton">longton</string>
+    <string name="simple_percentage">Simple Percentage</string>
+    <string name="increase_decrease">Perc.Increase/Decrease</string>
+    <string name="initial_value">Initial Value</string>
+    <string name="price">Price</string>
+    <string name="distance">Distance</string>
+    <string name="fuel">Fuel</string>
+    <string name="current">Current</string>
+    <string name="resistance">Resistance</string>
+    <string name="voltage">Voltage</string>
+    <string name="power">Power</string>
+    <string name="other">other</string>
+    <string name="mach">mach</string>
+    <string name="knot">knot</string>
+    <string name="lightspeed">lightspeed</string>
+    <string name="speed">speed</string>
+    <string name="milehour">milehour</string>
+    <string name="footsecond">footsecond</string>
+    <string name="footminute">footminute</string>
+    <string name="kilometerhour">kilometerhour</string>
+    <string name="roman">Roman Numerals</string>
+    <string name="metersecond">metersecond</string>
+    <string name="number">number</string>
+    <string name="newtonmeter">newtonmeter</string>
+    <string name="romannumber">romannumber</string>
+    <string name="bar">bar</string>
+    <string name="meterkilogram">meterkilogram</string>
+    <string name="legend">legend</string>
+    <string name="footpoundforce">footpoundforce</string>
+    <string name="pascal">pascal</string>
+    <string name="newtoncentimeter">newtoncentimeter</string>
+    <string name="dynemeter">dynemeter</string>
+    <string name="inchpoundforce">inchpoundforce</string>
+    <string name="torr">torr</string>
+    <string name="torque">Torque</string>
+    <string name="poundinch">poundinch</string>
+    <string name="poundfoot">poundfoot</string>
+    <string name="millimetermercury">millimetermercury</string>
+    <string name="millibar">millibar</string>
+    <string name="kilopascal">kilopascal</string>
+    <string name="hectopascal">hectopascal</string>
+    <string name="atmosphere">atmosphere</string>
+    <string name="pressure">Pressure</string>
+    <string name="efficiency">Efficiency</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="side">Side</string>
+    <string name="side_a">Side A</string>
+    <string name="side_b">Side B</string>
+    <string name="side_c">Side C</string>
+    <string name="height">Height</string>
+    <string name="height_cm">Height in CM</string>
+    <string name="inch">inch ²</string>
+    <string name="age">Age</string>
+    <string name="bmi_inch">inch</string>
+    <string name="waist">Waist in CM</string>
+    <string name="height_ft">Height in ft</string>
+    <string name="top">Top</string>
+    <string name="bill">Bill</string>
+    <string name="no_people">No. of people</string>
+    <string name="tip_amount">Tip amount</string>
+    <string name="cost">Cost/Person</string>
+    <string name="cost__">Cost</string>
+    <string name="value1">Value x1</string>
+    <string name="value2">Value x2</string>
+    <string name="value3">Value x3</string>
+    <string name="final_value">Final Value</string>
+    <string name="hypotenuse">Hypotenuse</string>
+    <string name="clear">Clear</string>
+    <string name="year">Years</string>
+    <string name="month">Months</string>
+    <string name="day">Days</string>
+    <string name="degree">degree</string>
+    <string name="radian">radian</string>
+    <string name="grad">grad</string>
+    <string name="revolution">revolution</string>
+    <string name="circle">circle</string>
+    <string name="mil">mil</string>
+    <string name="total_month">Total Months</string>
+    <string name="total_days">Total Days</string>
+    <string name="cconverter">For any currency converter you need to on your internet connection</string>
+    <string name="calculate">Calculate</string>
+    <string name="calories">Calories</string>
+    <string name="arithmetic">Arithmetic</string>
+    <string name="geometric">Geometric</string>
+    <string name="harmonic">Harmonic</string>
+    <string name="result">Result</string>
+    <string name="analyze">Analyze</string>
+    <string name="average">Average</string>
+    <string name="average_mean">Average / Mean</string>
+    <string name="decimal_to_fraction">Decimal to fraction</string>
+    <string name="fraction_to_decimal">fraction to Decimal</string>
+    <string name="proportion">Proportion/Ratio</string>
+    <string name="acceleration">Acceleration</string>
+    <string name="imperial">imperial</string>
+    <string name="feet">feet ²</string>
+    <string name="data_transfer">Data Transfer</string>
+    <string name="area_unit">Area Unit</string>
+    <string name="yard">yard ²</string>
+    <string name="HorsePower">HorsePower</string>
+    <string name="force">Force</string>
+    <string name="newton">newton</string>
+    <string name="mile">mile ²</string>
+    <string name="kilogramforce">kilogramforce</string>
+    <string name="acres">acres ²</string>
+    <string name="dyne">dyne</string>
+    <string name="kilo">kilowatt</string>
+    <string name="wat">watt</string>
+    <string name="miliwatt">miliwatt</string>
+    <string name="megawatt">megawatt</string>
+    <string name="gigawatt">gigawatt</string>
+    <string name="ounceforce">ounceforce</string>
+    <string name="poundforce">poundforce</string>
+    <string name="gramforce">gramforce</string>
+    <string name="gigabyte">gigabyte</string>
+    <string name="gigabit">gigabit</string>
+    <string name="are">are ²</string>
+    <string name="terabit">terabit</string>
+    <string name="kelvin">kelvin</string>
+    <string name="Celsius">Celsius</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="temperature">temperature</string>
+    <string name="terabyte">terabyte</string>
+    <string name="angle">Angle</string>
+    <string name="bit">Bit</string>
+    <string name="kilobit">kilobit</string>
+    <string name="megabit">megabit</string>
+    <string name="bitsecond">bitsecond</string>
+    <string name="Byte">Byte</string>
+    <string name="joule">joule</string>
+    <string name="erg">erg</string>
+    <string name="watt">watt</string>
+    <string name="btu">btu</string>
+    <string name="kilowatt">kilowatt</string>
+    <string name="footpound">footpound</string>
+    <string name="kilocalorie">kilocalorie</string>
+    <string name="electronvolt">electronvolt</string>
+    <string name="megajoule">megajoule</string>
+    <string name="kilojoule">kilojoule</string>
+    <string name="kilobyte">kilobyte</string>
+    <string name="megabyte">megabyte</string>
+    <string name="bytesecond">bytesecond</string>
+    <string name="metric">metric</string>
+    <string name="millimeter">millimeter ²</string>
+    <string name="centimeter">centimeter ²</string>
+    <string name="meter">meter ²</string>
+    <string name="kilometer">kilometer ²</string>
+    <string name="hectare">hectare ²</string>
+    <string name="proportion_ratio">Proportion Ratio</string>
+    <string name="input_value">Input Your Values</string>
+    <string name="ans">Ans:</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="current_date">Current Date</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="energy">Energy</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="time_dis">This time well calculate by 24 hours</string>
+    <string name="select_gender">Please select Gender</string>
+    <string name="choose_lifestyle">Choose Your Lifestyle</string>
+    <string name="directly">Directly</string>
+    <string name="indirectly">Indirectly</string>
+    <string name="equation_solver">Equation Solver</string>
+    <string name="combination">Combinations</string>
+    <string name="textview1">How many numbers are possible?</string>
+    <string name="textview2">How many numbers are used in set?</string>
+    <string name="textview3">Is the order important?</string>
+    <string name="textview4">Can you repeat a number?</string>
+    <string name="permutations">Permutations</string>
+    <string name="fraction">fraction</string>
+    <string name="decimal">decimal</string>
+    <string name="devied">/</string>
+    <string name="gcf">GCF / LCM</string>
+    <string name="half">1 / 2</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="metric_discription">UnderWeight: BMI &lt; 18.5\nNormal weight: BMI = 18.5 - 24.9\nOverweight: BMI = 25 - 29.9\nobese: BMI > 30</string>
+    <string name="dftextview">Convert a decimal value to its fraction equivalent</string>
+    <string name="gltextview">Find out greatest common factor least commom set of two values</string>
+    <string name="heron_discription">Find out the properties of a triangle knowing all the sides using heron\'s formula</string>
+    <string name="roman_discription">I = 1\nV = 5\nX = 10\nL = 50\nc = 100\nD = 500\nM = 1000</string>
+    <string name="done">done</string>
+    <string name="search_here">Search here</string>
+    <string name="search">Search</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="health_detail">Use this calculator to check your body mass index, daily caloric burn, and body fat percentage can all benefit from using health calculators.</string>
+    <string name="finance_detail">Financial calculators also help in unit price, sales tax, tip, loan, and interest can all benefit from using financial calculators.</string>
+    <string name="geometry_detail">Geometry is a simple calculator using trigonometric functions, Pythagorean theorem and Thales\' theorem.</string>
+    <string name="centuries">centuries</string>
+    <string name="yr">yr</string>
+    <string name="mo">mo</string>
+    <string name="wk">wk</string>
+    <string name="hr">hr</string>
+    <string name="min">min</string>
+    <string name="s">s</string>
+    <string name="ms">ms</string>
+    <string name="update_text">Our Community Believe in Update and Improvement, So We Continuously Provide Update To Our Valuable Users. Keep Updated And Support Us.\nThanks !</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="more_apps">More Apps</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_our_app">Share Our App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="set_dark_mode">Set Dark Mode</string>
+    <string name="no_apps_found">No Apps Found</string>
+    <string name="install">Install</string>
+    <string name="internet_not_available">Internet not available</string>
+
+    <string name="grant_permission_noti">please grant permission to show notification</string>
+
+    <string-array name="currencies">
+        <item>EUR</item>
+
+        <item>GBP</item>
+        <item>USD</item>
+        <item>DKK</item>
+
+        <item>SEK</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>JPY</item>
+
+    </string-array>
+
+    <string-array name="currencies2">
+        <item>USD</item>
+
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>GBP</item>
+
+        <item>SEK</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>JPY</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

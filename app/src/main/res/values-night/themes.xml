@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmartCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="textInputStyle">@style/CustomTextInputStyle</item>
+    </style>
+
+    <style name="CustomTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="hintTextColor">?attr/colorSurface</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="edit_text" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <color name="purple_700">#041955</color>
+    <color name="button_color">#79BEFE</color>
+    <color name="inputText_color">#F4F6FA</color>
+    <color name="shadow_color">#0A5F72</color>
+
+    <color name="background_color">#041955</color><!--#195C72-->
+    <color name="radio_btn_color">#FFFFFF</color>
+    <color name="viewpager_color">#3450a1</color><!--#023642-->
+    <color name="card_color">#041955</color><!--0A4E5E-->
+    <color name="textColor">#FFFFFF</color>
+    <color name="sub_page_color">#3450a1</color><!--#023642-->
+    <color name="tab_unselected_textcolor">#99FFFFFF</color>
+    <color name="outline_borderColor">#FFFFFF</color><!--116B9E-->
+    <color name="text_hint_color">#CCFFFFFF</color>
+    <color name="bottomline_color">#FFFFFF</color>
+    <color name="result_color">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="drawer_text_color">#FFFFFF</color>
+    <color name="input_card">#CC041955</color><!--0B5060-->
+    <color name="result_btn_color">#041955</color><!--1196B2-->
+    <color name="text_label">#FFFFFF</color>
+    <color name="drawer_top">#0F5E70</color>
+    <color name="drawer_bottom">#3450a1</color><!--0B5060-->
+    <color name="bg_edit_color">#00000000</color><!--0A5F72-->
+    <color name="search_color">#195C72</color>
+    <color name="view_splash">#FFFFFF</color>
+    <color name="splash_bg">#023642</color>
+
+
+</resources>

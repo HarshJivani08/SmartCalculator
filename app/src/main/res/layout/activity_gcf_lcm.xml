@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewpager_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/constraint_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:outlineAmbientShadowColor="@color/shadow_color"
+                    android:outlineSpotShadowColor="@color/shadow_color"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/input_card"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/text_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latobold"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="@string/input_value"
+                            android:textColor="@color/text_label"
+                            android:textSize="18sp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latoregular"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_20sdp"
+                            android:text="@string/gltextview"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latomedium"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="@string/value1"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editText_gl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/bottomline_color"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="12"
+                                android:inputType="numberSigned"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latomedium"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="@string/value2"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editText_gl2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/bottomline_color"
+                                android:hint="5"
+                                android:inputType="numberSigned"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:id="@+id/clear_c2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_bg"
+                                android:fontFamily="@font/latomedium"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:text="@string/clear"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:id="@+id/calculate_c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_bg"
+                                android:fontFamily="@font/latomedium"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:singleLine="true"
+                                android:text="@string/calculate"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/constraint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:outlineAmbientShadowColor="@color/shadow_color"
+                    android:outlineSpotShadowColor="@color/shadow_color"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_input">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/input_card"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/text_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latobold"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="@string/result"
+                            android:textColor="@color/text_label"
+                            android:textSize="18sp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/latomedium"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="@string/arithmetic"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editText_gl3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/bottomline_color"
+                                android:editable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="@string/geometric"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editText_gl4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/bottomline_color"
+                                android:editable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="60"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

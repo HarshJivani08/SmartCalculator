@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sub_page_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/constraint_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:outlineAmbientShadowColor="@color/shadow_color"
+                android:outlineSpotShadowColor="@color/shadow_color"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/input_card"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_12sdp">
+
+                        <TextView
+                            android:id="@+id/text_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/latobold"
+                            android:gravity="center"
+                            android:text="@string/input_value"
+                            android:textColor="@color/text_label"
+                            android:textSize="18sp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/newton"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_force1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="N"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/kilogramforce"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_force2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="kgf"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/gramforce"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_force3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="gf"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/dyne"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_force4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="dyn"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/poundforce"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_force5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="lbf"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/latosemibold"
+                                android:text="@string/ounceforce"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editText_force6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:fontFamily="@font/latoregular"
+                                android:hint="ozf"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="16sp"
+                                app:backgroundTint="@color/bottomline_color" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/latomedium"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_input" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
