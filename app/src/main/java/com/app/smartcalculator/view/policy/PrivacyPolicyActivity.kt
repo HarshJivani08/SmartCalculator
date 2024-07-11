@@ -17,6 +17,7 @@ class PrivacyPolicyActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         setClick()
+        binding.toolbar.title.text = getString(R.string.privacy_policy)
 
     }
     private fun setClick() {

@@ -29,8 +29,6 @@ import com.app.smartcalculator.view.moreapp.MoreAppActivity
 import com.app.smartcalculator.view.policy.PrivacyPolicyActivity
 import com.app.smartcalculator.view.search.SearchActivity
 
-
-
 class MainActivity : BaseActivity(), View.OnClickListener, NavDrawerAdapter.OnItemClickListeners {
 
     private var binding: ActivityMainBinding? = null
