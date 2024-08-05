@@ -9,9 +9,7 @@ class AppConstants {
         const val SAVE_PAGE = "save_page"
         const val PREFERENCE_NAME = "preference_name"
         const val PLAY_STORE_BASE: String = "https://play.google.com/store/apps/details?id="
-        const val IMAGE_BASE: String =
-            "https://socialinfotech.in/development/appmanager/uploads/app/"
-
+        const val IMAGE_BASE: String = "https://socialinfotech.in/development/appmanager/uploads/app/"
 
         const val CHANNEL_ID = "proCalculator_notification"
         const val CHANNEL_NAME = "proCalculator"

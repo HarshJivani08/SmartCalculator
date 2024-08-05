@@ -40,7 +40,4 @@ class SmartCalcApp: Application() {
     fun saveViewPage(position: Boolean) {
         sharedPreferences?.edit()?.putBoolean(AppConstants.SAVE_PAGE, position)?.apply()
     }
-
-
-
 }

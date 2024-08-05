@@ -15,7 +15,6 @@ class LoanActivity : BaseActivity(), View.OnClickListener {
 
     private var binding: ActivityLoanBinding? = null
     val decimalFormat = DecimalFormat("###.##")
-
     var value1 = 0.0
     var value2 = 0.0
     var value3 = 0.0
@@ -30,7 +29,6 @@ class LoanActivity : BaseActivity(), View.OnClickListener {
     }
 
     private fun setClick() {
-
         binding?.toolbar?.backImg?.setOnClickListener(this)
         binding?.clearC2?.setOnClickListener(this)
         binding?.calculateC1?.setOnClickListener(this)
@@ -39,7 +37,7 @@ class LoanActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
             R.id.clear_c2 -> {
                 clearValue()

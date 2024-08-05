@@ -177,7 +177,7 @@ class CombinationActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
             R.id.clear_c2 -> {
                 clearValue()

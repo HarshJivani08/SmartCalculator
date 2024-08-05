@@ -430,7 +430,7 @@ class EnergyActivity : BaseActivity(), View.OnClickListener {
             }
 
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }

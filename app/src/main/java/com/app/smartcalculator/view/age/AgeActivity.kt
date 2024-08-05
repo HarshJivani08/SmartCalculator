@@ -37,7 +37,7 @@ class AgeActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
             R.id.calculate_c1 -> {
 
@@ -157,19 +157,19 @@ class AgeActivity : BaseActivity(), View.OnClickListener {
         val currentDate : String = binding?.editTextMa3?.text.toString()
 
         if (binding?.editTextMa1?.text.toString().isEmpty()) {
-            binding?.editTextMa1?.error = "Input bday date."
+            binding?.editTextMa1?.error = "enter birth date."
             binding?.editTextMa1?.requestFocus()
             this.keybordopen()
         } else if (binding?.editTextMa2?.text.toString().isEmpty()) {
-            binding?.editTextMa2?.error = "Input bday year."
+            binding?.editTextMa2?.error = "enter birth year."
             binding?.editTextMa2?.requestFocus()
             this.keybordopen()
         } else if (binding?.editTextMa3?.text.toString().isEmpty()) {
-            binding?.editTextMa3?.error = "Input cur date."
+            binding?.editTextMa3?.error = "enter current date."
             binding?.editTextMa3?.requestFocus()
             this.keybordopen()
         } else if (binding?.editTextMa4?.text.toString().isEmpty()) {
-            binding?.editTextMa4?.error = "Input cur year."
+            binding?.editTextMa4?.error = "enter current year."
             binding?.editTextMa4?.requestFocus()
             this.keybordopen()
         }
@@ -285,7 +285,4 @@ class AgeActivity : BaseActivity(), View.OnClickListener {
             }
         }
     }
-
-
-
 }

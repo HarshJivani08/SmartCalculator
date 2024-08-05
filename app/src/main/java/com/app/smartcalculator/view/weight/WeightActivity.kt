@@ -96,7 +96,7 @@ class WeightActivity : BaseActivity(), View.OnClickListener {
                 binding?.editTextWeight10?.setText("")
             }
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }

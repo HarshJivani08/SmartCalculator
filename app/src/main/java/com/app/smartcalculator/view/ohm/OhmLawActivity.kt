@@ -33,7 +33,7 @@ class OhmLawActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
             R.id.calculate_c1 -> {
                 calculateValue()

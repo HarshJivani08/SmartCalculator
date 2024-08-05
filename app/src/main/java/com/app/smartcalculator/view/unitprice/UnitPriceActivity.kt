@@ -16,7 +16,6 @@ class UnitPriceActivity : BaseActivity(), View.OnClickListener {
     var value2 = 0.0
     val decimalFormat = DecimalFormat("###.##")
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityUnitPriceBinding.inflate(layoutInflater)
@@ -36,7 +35,7 @@ class UnitPriceActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
             R.id.clear_c2 -> {
                 clearValue()

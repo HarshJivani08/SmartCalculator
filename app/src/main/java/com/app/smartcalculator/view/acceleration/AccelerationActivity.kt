@@ -152,7 +152,7 @@ class AccelerationActivity : BaseActivity(), View.OnClickListener {
                 binding?.editTextUa4?.setText("")
             }
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
 
         }

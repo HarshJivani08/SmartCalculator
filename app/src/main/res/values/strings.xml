@@ -19,7 +19,7 @@
     <string name="final_bill">Final Bill</string>
     <string name="volume">Volume</string>
     <string name="gravity">gravity</string>
-    <string name="sale_tax">Sales Tax</string>
+    <string name="sale_tax">GST</string>
     <string name="Gal">GAI</string>
     <string name="heron">Heron\'s Formula</string>
     <string name="perimeter">Perimeter</string>
@@ -27,7 +27,7 @@
     <string name="milligram">milligram</string>
     <string name="time">Time</string>
     <string name="loan">Loan</string>
-    <string name="rate">Rate</string>
+    <string name="rate">Rate (in %)</string>
     <string name="period">Period</string>
     <string name="hour">Hours</string>
     <string name="minute">Minutes</string>
@@ -61,7 +61,7 @@
     <string name="sortton">sortton</string>
     <string name="kilogram">kilogram</string>
     <string name="weight_ibs">Weight in ibs</string>
-    <string name="tax">Tax</string>
+    <string name="tax">Tax (in %)</string>
     <string name="longton">longton</string>
     <string name="simple_percentage">Simple Percentage</string>
     <string name="increase_decrease">Perc.Increase/Decrease</string>

@@ -446,7 +446,7 @@ class ListUtil {
             itemList.add(
                 SearchItem(
                     imageResource = R.drawable.ic_salestax,
-                    title = "Sales Tax",
+                    title = "GST",
                     intent = Intent(SmartCalcApp.getAppInstance(), SalesTaxActivity::class.java)
                 )
             )
@@ -459,8 +459,6 @@ class ListUtil {
 //
 //                )
 //            )
-
-
             itemList.add(
                 SearchItem(
                     imageResource = R.drawable.ic_tip,
@@ -543,7 +541,6 @@ class ListUtil {
 //
 //                )
 //            )
-
 
             itemList.add(
                 SearchItem(

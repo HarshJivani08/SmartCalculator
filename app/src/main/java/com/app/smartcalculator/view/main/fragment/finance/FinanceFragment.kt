@@ -32,7 +32,7 @@ class FinanceFragment : BaseFragment(), AlgebraAdapter.OnItemClickListeners {
     private var items = arrayListOf(
 //        DataList(R.drawable.ic_currancy, 0, "Currency Converter", "Finance"),
         DataList(R.drawable.ic_unitprice, 1, "Unit Price", "Finance"),
-        DataList(R.drawable.ic_salestax, 2, "Sales Tax", "Finance"),
+        DataList(R.drawable.ic_salestax, 2, "GST", "Finance"),
         DataList(R.drawable.ic_tip, 3, "Tip", "Finance"),
         DataList(R.drawable.ic_loan, 4, "Loan", "Finance"),
         DataList(0, 4, "", ""),
@@ -58,7 +58,7 @@ class FinanceFragment : BaseFragment(), AlgebraAdapter.OnItemClickListeners {
             "Unit Price" -> {
                 startActivity(Intent(context, UnitPriceActivity::class.java))
             }
-            "Sales Tax" -> {
+            "GST" -> {
                 startActivity(Intent(context, SalesTaxActivity::class.java))
             }
             "Tip" -> {
@@ -75,7 +75,6 @@ class FinanceFragment : BaseFragment(), AlgebraAdapter.OnItemClickListeners {
 
 
     private fun initView() {
-
         val gridLayoutManager = GridLayoutManager(requireContext(), 2)
         gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
             override fun getSpanSize(position: Int): Int {
@@ -89,8 +88,5 @@ class FinanceFragment : BaseFragment(), AlgebraAdapter.OnItemClickListeners {
         binding?.financeRec?.layoutManager = gridLayoutManager
         adapter = AlgebraAdapter(items, this, requireActivity())
         binding?.financeRec?.adapter = adapter
-
     }
-
-
 }

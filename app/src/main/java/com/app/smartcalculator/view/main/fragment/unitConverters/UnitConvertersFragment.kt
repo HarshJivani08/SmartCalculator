@@ -34,7 +34,6 @@ class UnitConvertersFragment : BaseFragment(), AlgebraAdapter.OnItemClickListene
     var adapter: AlgebraAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     private var items = arrayListOf(

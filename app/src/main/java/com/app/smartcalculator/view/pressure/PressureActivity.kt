@@ -411,7 +411,7 @@ class PressureActivity() : BaseActivity(), View.OnClickListener, Parcelable {
             }
 
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }

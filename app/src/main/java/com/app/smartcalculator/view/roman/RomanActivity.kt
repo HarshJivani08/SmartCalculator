@@ -169,7 +169,7 @@ class RomanActivity : BaseActivity(), View.OnClickListener {
                 setUpDialog()
             }
             R.id.back_img -> {
-                onBackPressed()
+              onBackPressedDispatcher.onBackPressed()
             }
 
             R.id.clear -> {

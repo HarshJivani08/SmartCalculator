@@ -56,7 +56,7 @@ class TemperatureActivity : BaseActivity(), View.OnClickListener {
                 binding?.editTextTemp3?.setText("")
             }
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }

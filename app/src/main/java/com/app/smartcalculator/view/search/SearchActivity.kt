@@ -46,9 +46,7 @@ class SearchActivity : BaseActivity(), SearchAdapter.ItemClickListener,
         }
         binding?.searchRec?.layoutManager = gridLayoutManager
         binding?.searchRec?.adapter = adapter
-
     }
-
 
     private fun initSearch() {
         binding?.edtSearch?.addTextChangedListener(object : TextWatcher {
@@ -75,13 +73,12 @@ class SearchActivity : BaseActivity(), SearchAdapter.ItemClickListener,
 
     override fun onItemClick(searchItem: SearchItem, position: Int) {
         startActivity(searchItem.intent)
-
     }
 
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }
@@ -89,9 +86,4 @@ class SearchActivity : BaseActivity(), SearchAdapter.ItemClickListener,
     fun setClick() {
         binding?.toolbar?.backImg?.setOnClickListener(this)
     }
-
-
-
-
-
 }

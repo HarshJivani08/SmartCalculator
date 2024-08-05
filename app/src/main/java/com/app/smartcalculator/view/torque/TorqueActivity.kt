@@ -74,7 +74,7 @@ class TorqueActivity : BaseActivity(), View.OnClickListener {
                 binding?.editTextTorque6?.setText("")
             }
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }

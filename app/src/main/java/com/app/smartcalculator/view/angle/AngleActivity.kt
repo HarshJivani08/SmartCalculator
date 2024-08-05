@@ -45,7 +45,7 @@ class AngleActivity : BaseActivity(), View.OnClickListener {
 
 
     private fun setUpDialog() {
-        val dialog = Dialog(this,R.style.MyAlertDialogTheme)
+        val dialog = Dialog(this, R.style.MyAlertDialogTheme)
         dialog.setContentView(R.layout.user_input_dialoge)
         val editText = dialog.findViewById<View>(R.id.input_value) as EditText
         dialog.findViewById<View>(R.id.done).setOnClickListener {
@@ -67,26 +67,32 @@ class AngleActivity : BaseActivity(), View.OnClickListener {
                 degreeConversion(d)
                 return
             }
+
             R.id.editText_angle2 -> {
                 radianConversion(d)
                 return
             }
+
             R.id.editText_angle3 -> {
                 gradConversion(d)
                 return
             }
+
             R.id.editText_angle4 -> {
                 revolutionConversion(d)
                 return
             }
+
             R.id.editText_angle5 -> {
                 circleConversion(d)
                 return
             }
+
             R.id.editText_angle6 -> {
                 milConversion(d)
                 return
             }
+
             else -> return
         }
     }
@@ -196,21 +202,27 @@ class AngleActivity : BaseActivity(), View.OnClickListener {
             R.id.editText_angle1 -> {
                 setUpDialog()
             }
+
             R.id.editText_angle2 -> {
                 setUpDialog()
             }
+
             R.id.editText_angle3 -> {
                 setUpDialog()
             }
+
             R.id.editText_angle4 -> {
                 setUpDialog()
             }
+
             R.id.editText_angle5 -> {
                 setUpDialog()
             }
+
             R.id.editText_angle6 -> {
                 setUpDialog()
             }
+
             R.id.clear -> {
                 binding?.editTextAngle1?.setText("")
                 binding?.editTextAngle2?.setText("")
@@ -221,7 +233,7 @@ class AngleActivity : BaseActivity(), View.OnClickListener {
             }
 
             R.id.back_img -> {
-                onBackPressed()
+                  onBackPressedDispatcher.onBackPressed()
             }
         }
     }

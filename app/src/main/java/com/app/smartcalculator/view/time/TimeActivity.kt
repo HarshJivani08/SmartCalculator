@@ -42,7 +42,7 @@ class TimeActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.back_img -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
             R.id.calculate_c1 -> {
                 showStartTime()
@@ -55,8 +55,6 @@ class TimeActivity : BaseActivity(), View.OnClickListener {
     }
 
     private fun clearValue() {
-
-
         if (binding?.editTextTd1!!.requestFocus()) {
             this.keybordclose()
         }
@@ -71,7 +69,7 @@ class TimeActivity : BaseActivity(), View.OnClickListener {
 
     private fun showStartTime() {
         this.keybordclose()
-        
+
         val mcurrentTime = Calendar.getInstance()
         val mcurrentTime1 = Calendar.getInstance()
 
@@ -87,11 +85,11 @@ class TimeActivity : BaseActivity(), View.OnClickListener {
 //        val spinner2: Spinner? = binding?.spinner2
 
         mcurrentTime.set(Calendar.SECOND, 36)
-//        mcurrentTime.set(Calendar.AM_PM, spinner?.id!!)
+//      mcurrentTime.set(Calendar.AM_PM, spinner?.id!!)
         mcurrentTime.set(Calendar.MILLISECOND, 0)
 
         mcurrentTime1.set(Calendar.AM_PM, 1)
-//        mcurrentTime1.set(Calendar.AM_PM, spinner2?.id!!)
+//      mcurrentTime1.set(Calendar.AM_PM, spinner2?.id!!)
         mcurrentTime1.set(Calendar.MILLISECOND, 0)
 
 //        if (hrStrat <= 24.toString() && minStart <= 24.toString() && hrEnd <= 60.toString() && minEnd <= 60.toString() && hrEnd.isNotEmpty() && hrStrat.isNotEmpty() && minEnd.isNotEmpty() && minStart.isNotEmpty()) {
@@ -122,16 +120,13 @@ class TimeActivity : BaseActivity(), View.OnClickListener {
                 Toast.makeText(this, "Enter valid input", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
 
 
     private fun timerCalculation() {
-
         val hrStrat: String = binding?.editTextTd1?.text.toString()
         val minStrat: String = binding?.editTextTd2?.text.toString()
 //        val spinner: Spinner? = binding?.spinner1
-
         val hrEnd: String = binding?.editTextEnd1?.text.toString()
         val minEnd: String = binding?.editTextEnd2?.text.toString()
 //        val spinner2: Spinner? = binding?.spinner2

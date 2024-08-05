@@ -114,6 +114,7 @@ class MainActivity : BaseActivity(), View.OnClickListener, NavDrawerAdapter.OnIt
 
     override fun onItemClick(data: NavBean, adapterPosition: Int) {
         when (data.title) {
+
             getString(R.string.share_our_app) -> {
                 shareApp()
             }
